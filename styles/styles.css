@@ -1,0 +1,327 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6, strong {
+    color: #232e35;
+}
+
+p {
+    font-size: 1rem;
+    line-height: 1.9rem;
+}
+
+p,span,label,input,textarea, li {
+    color: #656d72;
+}
+
+a {
+    text-decoration: none;
+}
+
+.main-container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 1200px) {
+    .main-container {
+        width: 90%;
+    }
+}
+
+.section-title {
+    margin: 1rem 0 4rem;
+    font-size: 2rem;
+}
+
+.pre-title {
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+    color: #656d72;
+    position: relative;
+    padding-left: 40px;
+    width: fit-content;
+    font-weight: 400;
+    font-size: 0.9rem;
+}
+
+.pre-title::before {
+    content: "";
+    width: 30px;
+    height: 1px;
+    background-color: #111112;
+    position: absolute;
+    display: block;
+    left: 0;
+    top: 50%;
+}
+
+.grid-3 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 3rem;
+}
+
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 0;
+}
+
+.nav ul {
+    list-style: none;
+    display: flex;
+    gap: 3rem;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.logo a {
+    color: #232e35;
+}
+
+nav,ul,li {
+    display: flex;
+    align-items: center;
+}
+
+nav,ul,li,a {
+    color: #232e35;
+}
+
+.burger div {
+    width: 25px;
+    height: 2px;
+    background-color: #000;
+    margin: 7px;
+    transition: all .3s;
+    z-index: 99;
+}
+.burger {
+    display: none;
+    z-index: 99;
+    position: fixed;
+    top: 33px;
+    right: 35px;
+}
+
+#hero {
+    height: 720px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    background: #fbfbfb;
+}
+
+.hero-name {
+    font-size: 3rem;
+    font-weight: 700;
+    margin: 0.5rem 0.1rem;
+}
+.hero-name span {
+    color: rgb(139, 82, 223);
+}
+
+.hero-right img {
+    width: 65%;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    box-shadow: rgb(139, 82, 223);
+}
+.hero-right {
+    display: flex;
+    justify-content: center;
+}
+
+#about {
+    padding: 6rem 0;
+}
+.about-right {
+    display: flex;
+    justify-content: center;
+}
+.about-right img {
+    width: 14rem;
+    border-radius: 1rem;
+    padding: 0 1rem;
+}
+.about-left p {
+    margin-bottom: 1em;
+    margin-top: 1em;
+}
+
+#services {
+    background-color: #fbfbfb;
+    padding: 6rem 0;
+}
+
+.services-main-container .pre-title {
+    margin: 0 auto;
+}
+.services-title {
+    text-align: center;
+}
+.services {
+    padding: 3rem 2rem;
+    text-align: center;
+    background: white;
+    border-radius: 10%;
+}
+.services-icon img {
+    height: 50px;
+    border-radius: 1rem;
+}
+.services-icon {
+    width: fit-content;
+    margin: 0 auto;
+    padding: 1rem 1.3rem;
+    border-radius: 0.5rem;
+}
+
+#portfolios {
+    padding: 6rem 0;
+}
+
+.portfolios {
+    border-radius: 5%;
+    overflow: hidden;
+}
+.portfolios-cover {
+    height: 250px;
+}
+.portfolios-cover img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.portfolios-info {
+    padding: 2rem 1.5rem;
+}
+.portfolios-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+.portfolios h4 {
+    font-weight: 400;
+    font-size: 1.05rem;
+}
+.portfolios-title a svg:hover {
+    fill: rgb(139, 82, 223);
+}
+.portfolios-title a svg {
+    transition: 0.2s ease-in-out;
+}
+.portfolios-tags {
+    display: flex;
+    gap: 1rem;
+    margin: 1rem 0;
+}
+.portfolios-tags div {
+    font-size: .9rem;
+    border: 1px solid #373839;
+    padding: .4rem 1rem;
+    color: #656d72;
+    border-radius: 10%;
+}
+
+#contact {
+    padding: 6rem 0;
+}
+.contact {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 3rem;
+}
+.contact-form div {
+    margin-bottom: 1.4rem;
+}
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: .75rem 1.3rem;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #fbfbfb;
+    border: 1px solid rgb(211, 211, 211);
+    border-radius: 3px;
+    resize: none;
+}
+.contact-form input::placeholder, .contact-form textarea::placeholder {
+    color: #9d9fa1;
+}
+.contact-form input:focus, .contact-form textarea:focus {
+    outline: none;
+    border: 1px solid #7d7d7d;
+}
+.btn-submit {
+    width: 100%;
+    padding: .75rem 1.3rem;
+    background-color: rgb(139, 82, 223);
+    color: #fff;
+    border: none;
+    border: 3px;
+    cursor: pointer;
+    transition: 0.2s ease-in-out
+}
+.btn-submit:hover {
+    background: rgb(104, 58, 173);
+}
+.contact-item {
+    display: flex;
+    gap: 1.5rem;
+    margin-bottom: 2.5rem;
+}
+.contact-item-icon {
+    background: rgb(242, 242, 249);
+    width: 53px;
+    height: 53px;
+    border-radius: 9px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact-item-icon svg {
+    fill: rgb(104, 58, 173);
+}
+.contact-item-detail h4{
+    margin-bottom: .6rem;
+}
+.footer-icon {
+    display: flex;
+    gap: 1.5rem;
+    text-align: center;
+    justify-content: center;
+}
+.copyr {
+    text-align: center;
+    justify-content: center;
+}
+.footer-contact {
+    background: #fbfbfb;
+    padding: 6rem 0;
+}
+
+.typewriter {
+    font-size: 24px;
+  }
+  
+  @media (max-width: 600px) {
+    .typewriter {
+      font-size: 18px;
+    }
+  }
